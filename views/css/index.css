@@ -1,0 +1,131 @@
+header {
+    width: 100%;
+    height: 42px;
+    background: url('../images/top_ordin.png') repeat-x;
+}
+
+.head_ul {
+    width: 1000px;
+    height: 42px;
+    margin: 0 auto;
+}
+
+.head_one a {
+    display: block;
+    width: 230px;
+    height: 42px;
+    background: url('../images/top_ordin.png') 0 -42px no-repeat;
+}
+
+.head_two a {
+    display: block;
+    width: 230px;
+    height: 42px;
+    background: url('../images/top_ordin.png') 0 -83px no-repeat;
+}
+
+.head_three p:nth-of-type(1) {
+    width: 210px;
+    height: 42px;
+    line-height: 42px;
+}
+
+.head_three p:nth-of-type(2) {
+    width: 120px;
+    height: 42px;
+    line-height: 42px;
+}
+
+.head_three p a {
+    border-right: 1px solid #BFC6D7;
+    padding: 0 9px;
+}
+
+.head_three p span {
+    width: 72px;
+    height: 14px;
+    margin-left: 16px;
+    padding: 3px 16px;
+    line-height: 14px;
+    background: url('../images/top_ordin.png') 0 -137px no-repeat;
+    cursor: pointer;
+}
+
+main {
+    position: relative;
+}
+
+.videoBg video {
+    width: 100%;
+    height: 100%;
+    z-index: -99999;
+}
+
+@keyframes plv {
+    /* 50% {
+        transform: translate(-50%, -50%) scale(.8);
+    } */
+    100% {
+        transform: translate(-50%, -50%) scale(.9);
+    }
+}
+
+.palyV {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 88px;
+    height: 88px;
+    background: url('../images/spr.png') -10px -228px no-repeat;
+    animation: plv .5s ease-in infinite alternate;
+}
+
+.pp {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    opacity: .3;
+    height: 888px;
+    background: pink;
+    display: none;
+}
+
+.p {
+    position: absolute;
+    bottom: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    height: 61px;
+    line-height: 61px;
+    text-align: center;
+    width: 220px;
+    font-size: 30px;
+    background-color: #000;
+    cursor: pointer;
+}
+
+#voice {
+    position: absolute;
+    top: -9999px;
+    left: 0;
+    z-index: -999999999;
+}
+
+#em {
+    display: none;
+    position: fixed;
+    bottom: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 300px;
+    background: url('../images/1540474100-rMmbTzvEDl.jpeg') no-repeat;
+    background-size: 400px auto;
+    border-radius: 50%;
+    z-index: 666;
+    box-shadow: 0px 0px 8px 8px rgba(255, 255, 255, .7) inset, 1px 1px 8px 10px rgba(255, 255, 255, .8);
+}
